@@ -8,9 +8,9 @@ st.set_page_config(page_title="Prediction of disease Outbreaks",
                    layout='wide',
                    page_icon=":doctor:")
 
-diabetes_model = pickle.load(open(r"C:\Users\vtkat\.vscode\Project\diabetes_model.sav", "rb"))
-heart_disease_model=pickle.load(open(r"C:\Users\vtkat\.vscode\Project\heart_model.sav",'rb'))
-parkinsons_model=pickle.load(open(r"C:\Users\vtkat\.vscode\Project\parkinsons_model.sav",'rb'))
+diabetes_model = pickle.load(open(r"diabetes_model.sav", "rb"))
+heart_disease_model=pickle.load(open(r"heart_model.sav",'rb'))
+parkinsons_model=pickle.load(open(r"parkinsons_model.sav",'rb'))
 
 with st.sidebar:
     selected=option_menu("Prediction of disease outbreak system",
